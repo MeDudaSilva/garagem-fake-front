@@ -1,6 +1,6 @@
 <script setup>
 import { ref, reactive, onMounted } from "vue";
-import categoriasApi from "@/api/categorias.js";
+import CategoriasApi from "@/api/categorias";
 const categoriasApi = new CategoriasApi();
 
 const defaultCategoria = { id: null, descricao: "" };

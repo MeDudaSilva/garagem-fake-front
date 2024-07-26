@@ -11,12 +11,20 @@ onBeforeRouteUpdate(() => {
 <template>
   <div id="footerMenu" :style="{ display: showMenu ? 'block' : 'none' }">
     <RouterLink to="/">
-      <i class="mdi mdi-home-outline" />
-      Home
+      <i class="mdi mdi-steering" />
+      Acessorios
     </RouterLink>
     <RouterLink to="/login">
-      <i class="mdi mdi-account" />
-      Login
+      <i class="mdi mdi-train-car" />
+      Categorias
+    </RouterLink>
+    <RouterLink to="/login">
+      <i class="mdi mdi-palette-outline" />
+      Cores
+    </RouterLink>
+    <RouterLink to="/login">
+      <i class="mdi mdi-car-sports" />
+      Marcas
     </RouterLink>
   </div>
   <div class="icons">
@@ -43,7 +51,7 @@ onBeforeRouteUpdate(() => {
 #footerMenu {
   position: fixed;
   bottom: 15%;
-  right: 0;
+  right: 6vh;
 
   width: 20%;
   border-top: #eeeeee 1px solid;

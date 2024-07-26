@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
-import LayoutLarge from '@/layouts/LayoutLarge.vue';
+import LayoutFull from '@/layouts/LayoutFull.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,7 +8,7 @@ const router = createRouter({
     {
       path: '/',
       name: '',
-      component: LayoutLarge,
+      component: LayoutFull,
       children: [
         {
           path: '',
@@ -22,22 +22,22 @@ const router = createRouter({
         },
         {
           path: "/categorias",
-          name: "categorias",
+          name: "Categorias",
           component: () => import('@/views/CategoriaView.vue'),
         },
         {
           path: "/marcas",
-          name: "marcas",
+          name: "Marcas",
           component: () => import('@/views/MarcaView.vue'),
         },
         {
           path: "/acessorios",
-          name: "acessorios",
+          name: "Acessorios",
           component: () => import('@/views/AcessorioView.vue'),
         },
         {
           path: "/cores",
-          name: "cores",
+          name: "Cores",
           component: () => import('@/views/CorView.vue'),
         },
       ],
