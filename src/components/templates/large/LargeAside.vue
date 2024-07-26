@@ -12,7 +12,7 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
     </div>
     <div class="divider" />
     <div class="menu">
-      <router-link to="/">
+      <router-link to="/perfil">
         <i class="icon mdi mdi-account-circle-outline" /> Perfil
       </router-link>
       <router-link to="/categorias">
